@@ -7,16 +7,52 @@ body {
     color: #333;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
+/* Bandeau de navigation statique */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
 }
 
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustement pour compenser la barre de navigation fixe */
 header {
+    padding-top: 60px;
     background-color: #007bff;
     color: white;
     text-align: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
 }
 
